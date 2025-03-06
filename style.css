@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+   
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(18, 1, 33);
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+/* Apply glow effect to the entire body */
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(100, 86, 100, 0.6) 0%, rgba(170, 162, 162, 0) 70%);
+    z-index: -1; 
+    filter: blur(100px);
+} */
+#Title {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(135, 9, 135, 0.6) 20%, rgba(29, 5, 45, 0) 70%);
+        padding: 15px 10px;
+
+}
+@media screen and (max-width:600px) {
+
+        #Title{
+ font-size: smaller;
+        }
+    
+    
+}
+.About img {
+    width: 150px; /* Adjust image size */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover;
+  }
+  @media screen and (max-width:600px) {
+    .About img {
+        width: 100px; 
+        height: 100px;
+        border-radius: 50%; 
+        margin-left:30%;
+      
+       
+      }
+
+  }
+  @media screen and (max-width:600px){
+    .About h1{
+        font-size:medium;
+        margin: 0 0 0 20px;
+    }
+    .About p{
+        text-align: center;
+    }
+  }
+    
+.Name{
+    color: rgb(17, 2, 23);
+   font-weight: bold;
+}
+.About {
+    margin-top: 5%;
+   margin-left: 5%;
+    display: flex;
+   
+    gap:30px;
+    align-items: center;
+
+    
+}
+
+@media screen and (max-width:600px) {
+    .About{
+        display:block
+    }
+}
+.circle {
+    margin-top:5%;
+    display: inline-block;
+    border: 2px solid rgb(55, 29, 111); /* Circle border */
+    border-radius: 50%; /* Makes it circular */
+    padding: 10px 20px; /* Adjust padding to maintain shape */
+    text-align: center;
+    font-weight: bold;
+}
+
+    
+
+.Title{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+@media screen and (max-width:600px) {
+    .Title{
+        margin: 10% 0 5% 12%;
+        
+        font-size: medium;
+    }
+    
+}
+.Experience {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+   
+}
+@media screen and (max-width:600px){
+    .Experience{display:block;
+        align-items: center;
+        margin: 5%;
+  
+}
+}
+.Experience_container{
+    margin-top: 1%;
+      flex-basis: 30%;
+      background: radial-gradient(circle, rgba(135, 9, 135, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    box-sizing: border-box;
+    padding: 20px;
+    margin:10px;
+    border-radius: 10px;
+    border: 2px solid rgba(135, 9, 135, 0.8);
+ 
+}
+.Experience_container:hover {
+    border-color: rgb(236, 228, 236); 
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 10px rgba(203, 185, 203, 0.325); 
+    transition: all 0.5s ease-in;
+}
+
+.splchar{
+color:rgb(13, 130, 38)
+}
+.Info h3{
+margin-top:5%;
+text-align: center;
+    justify-content: center;
+    
+}
+
+.Info {
+    margin-top: 2%;
+    height: 200px;
+    background: radial-gradient(circle,white);
+}
+.Info p{
+    text-align: center;
+    font-size: small;
+}
+@media screen and (max-width:600px){
+    .Info{
+        height: 100px
+    }
+    .Info h3{
+       margin:0 5% 0 5%;
+    }
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header--primary {
+    flex-direction: row;
+}
+
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    transition: top .05s linear, left 0.05s linear;
+}
+.Animation{
+    width: 40px;
+    height: 10px;
+    border-radius: 10%;
+    
+    position: relative;
+    animation: myfirst 10s linear 2s infinite alternate;
+}
+      
+@keyframes myfirst {
+    0%   {background-color:red; left:0px;}
+    25%  {background-color:yellow; left:190px;}
+    50%  {background-color:blue; left:-190px; }
+    75%  {background-color:green;left: 190px; }
+    100% {background-color:red; left:-190px; }
+    
+}
+.Projects{
+margin-left:5%;
+
+}
+.Projects-1{
+   
+    display:flex;
+    align-items: center;
+
+}
+@media screen and (max-width:600px){
+    .Projects-1{
+        display:block
+    }
+
+
+}
+
+
+.Projects-2{
+    margin-top:5%;
+    display:flex;
+    align-items: center;
+
+}
+@media screen and (max-width:600px){
+    .Projects-2{
+        display:block
+    }
+
+
+}
+
+
+ .Projects_Content-1{ 
+flex-basis:60%;
+margin-top: 1%;
+    padding: 20px;
+
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(102, 46, 102, 0.733) 0%, rgba(55, 40, 40, 0.585) 100%); /* Light semi-transparent box */
+    /* backdrop-filter: blur(100px); Apply blur effect */
+    z-index: 1;
+    position:relative;
+    left:50px  
+}
+
+@media screen and (max-width:600px){
+    .Projects_Content-1{
+        margin:5%;
+        position:static;
+    }
+
+
+}
+.Projects_Content-2{
+    flex-basis: 60%;
+    margin-right:5% ;
+    object-fit: cover;
+    height:200px;width:200px;
+    padding: 20px;
+    background:radial-gradient(circle, rgba(102, 46, 102, 0.733) 0%, rgba(15, 15, 15, 0.585) 100%); ;
+    
+}
+@media screen and (max-width:600px){
+    .Projects_Content-2{
+        margin:5%;
+        position:static;
+        
+    }
+
+
+}
+.Projects_Content-12{ 
+    flex-basis:60%;
+    margin-top: 1%;
+        padding: 20px;
+    
+        border-radius: 10px;
+        background: radial-gradient(circle, rgba(102, 46, 102, 0.733) 0%, rgba(55, 40, 40, 0.585) 100%); /* Light semi-transparent box */
+        /* backdrop-filter: blur(100px); Apply blur effect */
+        z-index: 1;
+        position:relative;
+        right:120px
+                    }
+                    @media screen and (max-width:600px){
+                        .Projects_Content-12{
+                            margin:5%;
+                            position:static;
+                            
+                        }
+                    }
+                    .Projects_Content-21{
+                        flex-basis: 60%;
+                        margin-right:5% ;
+                        object-fit: cover;
+                        height:200px;width:200px;
+                        padding: 20px;
+                        background:radial-gradient(circle, rgba(102, 46, 102, 0.733) 0%, rgba(15, 15, 15, 0.585) 100%); ;
+                        
+                    }
+                    @media screen and (max-width:600px){
+                        .Projects_Content-21{
+                            margin:5%;
+                            position:static;
+                            
+                        }
+                    }
+                    .Contact{
+                        text-align: center;
+                        margin:5%;
+                       
+                    }
+                    .Contact h2{
+                              
+                        font-weight: bolder;
+                        color:rgb(94, 9, 116)
+                    }
+                    .social-icons {
+                
+                        justify-content: space-between;
+                        font-size: 40px;
+                        margin: 20px 30px 0 15px; 
+                        
+                    }
+                    .language-container {
+                        text-align: center;
+                      margin: 0 25% 5% 25%;
+                         background: radial-gradient(circle, rgba(135, 9, 135, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+   align-items: center;
+    padding: 20px;
+    
+    border-radius: 10px;
+    border: 2px solid rgba(135, 9, 135, 0.8);
+                                       
+                    }
+
+                    @media screen and (max-width:600px){
+                        .language-container {
+                            margin:2% 5% 2% 5%;
+                        }
+                    }
+
+
+                    .language-container span{
+                        width:50px
+                    }
+                    @media screen and (max-width:600px){
+                        .language-container  span{
+                            width:80px
+                        }
+                    }
+
+                    .language {
+                        
+                        margin:5% 20% 5% 0;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .progress-bar {
+                        margin:0 5% 0 5%;
+                        width: 100%;
+                        height: 15px;
+                        background: #ddd;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        position: relative;
+                    }
+                    .progress {
+                        height: 100%;
+                        width: 0;
+                        background: #2aad09;
+                        transition: width 1.5s ease-in-out;
+                    }
+                    
+                    
+                   
+  
+  
