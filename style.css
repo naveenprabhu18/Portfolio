@@ -21,7 +21,7 @@ body {
     /* align-items: center; */
 
 }
-#Title {
+.header__title{
     margin-top: 30px;
     text-align: center;
     justify-content: center;
@@ -31,20 +31,20 @@ body {
 }
 @media screen and (max-width:600px) {
 
-        #Title{
+        .header__title{
  font-size: smaller;
         }
     
     
 }
-.About img {
+.about img {
     width: 150px; /* Adjust image size */
     height: 150px;
     border-radius: 50%; /* Make it circular */
     object-fit: cover;
   }
   @media screen and (max-width:600px) {
-    .About img {
+    .about img {
         width: 100px; 
         height: 100px;
         border-radius: 50%; 
@@ -55,20 +55,20 @@ body {
 
   }
   @media screen and (max-width:600px){
-    .About h1{
+    .about h1{
         font-size:medium;
         margin: 0 0 0 20px;
     }
-    .About p{
+    .about p{
         text-align: center;
     }
   }
     
-.Name{
+.header__name{
     color: rgb(17, 2, 23);
    font-weight: bold;
 }
-.About {
+.about {
     margin-top: 5%;
    margin-left: 5%;
     display: flex;
@@ -80,11 +80,11 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    .About{
+    .about{
         display:block
     }
 }
-.circle {
+.about__circle {
     margin-top:5%;
     display: inline-block;
     border: 2px solid rgb(55, 29, 111); /* Circle border */
@@ -96,32 +96,32 @@ body {
 
     
 
-.Title{
+.title{
     margin-top: 2%;
     margin-left: 5%;
 }
 @media screen and (max-width:600px) {
-    .Title{
+    .title{
         margin: 10% 0 5% 12%;
         
         font-size: medium;
     }
     
 }
-.Experience {
+.title__experience {
     display: flex;
     justify-content: space-around; 
     align-items: center;
    
 }
 @media screen and (max-width:600px){
-    .Experience{display:block;
+    .title__experience{display:block;
         align-items: center;
         margin: 5%;
   
 }
 }
-.Experience_container{
+.title__experience__container{
     margin-top: 1%;
       flex-basis: 30%;
       background: radial-gradient(circle, rgba(135, 9, 135, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
@@ -132,43 +132,43 @@ body {
     border: 2px solid rgba(135, 9, 135, 0.8);
  
 }
-.Experience_container:hover {
+.title__experience__container:hover {
     border-color: rgb(236, 228, 236); 
     transform: scale(1.05); 
     box-shadow: 0px 0px 10px rgba(203, 185, 203, 0.325); 
     transition: all 0.5s ease-in;
 }
 
-.splchar{
+.title__experience__container--splchar{
 color:rgb(13, 130, 38)
 }
-.Info h3{
+.info h3{
 margin-top:5%;
 text-align: center;
     justify-content: center;
     
 }
 
-.Info {
+.info {
     margin-top: 2%;
     height: 200px;
     background: radial-gradient(circle,white);
 }
-.Info p{
+.info p{
     text-align: center;
     font-size: small;
 }
 @media screen and (max-width:600px){
-    .Info{
+    .info{
         height: 100px
     }
-    .Info h3{
+    .info h3{
        margin:0 5% 0 5%;
     }
 
 }
 
-.header {
+/* .header {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -176,7 +176,7 @@ text-align: center;
 
 .header--primary {
     flex-direction: row;
-}
+} */
 
 
 .dot {
@@ -189,7 +189,7 @@ text-align: center;
     transform: translate(-50%, -50%);
     transition: top .05s linear, left 0.05s linear;
 }
-.Animation{
+.title__experience__animation{
     width: 40px;
     height: 10px;
     border-radius: 10%;
@@ -206,18 +206,18 @@ text-align: center;
     100% {background-color:red; left:-190px; }
     
 }
-.Projects{
+.projects{
 margin-left:5%;
 
 }
-.Projects-1{
+.projects__one{
    
     display:flex;
     align-items: center;
 
 }
 @media screen and (max-width:600px){
-    .Projects-1{
+    .projects__one{
         display:block
     }
 
@@ -225,14 +225,14 @@ margin-left:5%;
 }
 
 
-.Projects-2{
+.projects__two{
     margin-top:5%;
     display:flex;
     align-items: center;
 
 }
 @media screen and (max-width:600px){
-    .Projects-2{
+    .projects__two{
         display:block
     }
 
@@ -240,7 +240,7 @@ margin-left:5%;
 }
 
 
- .Projects_Content-1{ 
+ .projects__content__one{ 
 flex-basis:60%;
 margin-top: 1%;
     padding: 20px;
@@ -254,14 +254,14 @@ margin-top: 1%;
 }
 
 @media screen and (max-width:600px){
-    .Projects_Content-1{
+    .projects__content__one{
         margin:5%;
         position:static;
     }
 
 
 }
-.Projects_Content-2{
+.projects__content--imageOne{
     flex-basis: 60%;
     margin-right:5% ;
     object-fit: cover;
@@ -271,7 +271,7 @@ margin-top: 1%;
     
 }
 @media screen and (max-width:600px){
-    .Projects_Content-2{
+    .projects__content--imageOne{
         margin:5%;
         position:static;
         
@@ -279,7 +279,7 @@ margin-top: 1%;
 
 
 }
-.Projects_Content-12{ 
+.projects__content__two{ 
     flex-basis:60%;
     margin-top: 1%;
         padding: 20px;
@@ -292,13 +292,13 @@ margin-top: 1%;
         right:120px
                     }
                     @media screen and (max-width:600px){
-                        .Projects_Content-12{
+                        .projects__content__two{
                             margin:5%;
                             position:static;
                             
                         }
                     }
-                    .Projects_Content-21{
+                    .projects__content--imageTwo{
                         flex-basis: 60%;
                         margin-right:5% ;
                         object-fit: cover;
@@ -308,18 +308,18 @@ margin-top: 1%;
                         
                     }
                     @media screen and (max-width:600px){
-                        .Projects_Content-21{
+                        .projects__content--imageTwo{
                             margin:5%;
                             position:static;
                             
                         }
                     }
-                    .Contact{
+                    .contact{
                         text-align: center;
                         margin:5%;
                        
                     }
-                    .Contact h2{
+                    .contact__content{
                               
                         font-weight: bolder;
                         color:rgb(94, 9, 116)
@@ -331,7 +331,7 @@ margin-top: 1%;
                         margin: 20px 30px 0 15px; 
                         
                     }
-                    .language-container {
+                    .info__language__container {
                         text-align: center;
                       margin: 0 25% 5% 25%;
                          background: radial-gradient(circle, rgba(135, 9, 135, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
@@ -344,29 +344,29 @@ margin-top: 1%;
                     }
 
                     @media screen and (max-width:600px){
-                        .language-container {
+                        .info__language__container {
                             margin:2% 5% 2% 5%;
                         }
                     }
 
 
-                    .language-container span{
+                    .info__language__container span{
                         width:50px
                     }
                     @media screen and (max-width:600px){
-                        .language-container  span{
+                        .info__language__container  span{
                             width:80px
                         }
                     }
 
-                    .language {
+                    .info__language {
                         
                         margin:5% 20% 5% 0;
                         display: flex;
                         justify-content: space-between;
                     }
                     
-                    .progress-bar {
+                    .info__language__progressbar {
                         margin:0 5% 0 5%;
                         width: 100%;
                         height: 15px;
@@ -375,7 +375,7 @@ margin-top: 1%;
                         overflow: hidden;
                         position: relative;
                     }
-                    .progress {
+                    .info__language__progress {
                         height: 100%;
                         width: 0;
                         background: #2aad09;
