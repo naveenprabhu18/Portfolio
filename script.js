@@ -10,8 +10,8 @@ function openLinkedIn() {
 }
 document.addEventListener("DOMContentLoaded", function () {
     let javaProficiency = 75; // Percentage of proficiency
-    let progressBar = document.getElementById("java-progress");
-    let percentageText = document.getElementById("java-percentage");
+    let progressBar = document.getElementById("info__language__java--progress");
+    let percentageText = document.getElementById("info__language__java--percentage");
 
     // Animate progress bar
     setTimeout(() => {
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
     let CProficiency = 70; // Percentage of proficiency
-    let progressBar = document.getElementById("C#-progress");
-    let percentageText = document.getElementById("C#-percentage");
+    let progressBar = document.getElementById("info__language__C#--progress");
+    let percentageText = document.getElementById("info__language__C#--percentage");
 
     // Animate progress bar
     setTimeout(() => {
@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded",function(){
     let HTMLProficiency = 85; // Percentage of proficiency
-    let progressBar = document.getElementById("HTML-progress");
-    let percentageText = document.getElementById("HTML-percentage");
+    let progressBar = document.getElementById("info__language__HTML--progress");
+    let percentageText = document.getElementById("info__language__HTML--percentage");
     setTimeout(()=>{
         progressBar.style.width=HTMLProficiency +"%";
         percentageText.textContent=HTMLProficiency + "%";
