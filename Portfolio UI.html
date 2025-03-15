@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -22,10 +22,16 @@
     
         <section class="about">
             <img src="profilepic.jpg" alt="My Image">
-<div>
+<div class="about__info">
             <h1>I am a <span class="about__circle">Software Engineer</span>!!!  </h1>
             <p>Currently Working as Software Engineer Trainee in @xyz</p>
         </div>
+        <div class="video__embadded">
+        <iframe src="https://www.youtube.com/embed/ly36kn0ug4k?si=JSQiQ50pgPfXcHh1" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="video__embadded__message">Youtube video</p>
+</div>
         </section>
     
         <main>
@@ -35,19 +41,37 @@
                     <span style="font-size: small;display: block;margin-top: 1%;">Worked in building exe and have knowledge in interacting with TeamCenter and SolidEdge by using its DLL.</span>
                 </h2>
                 <!-- <h2 class="Experience_container"> -->
-                <figure class="title__experience__animation">
+                <!-- <figure class="title__experience__animation"> -->
                 <!-- </h2> -->
                 </figure>
                 <h2 class="title__experience__container">Wix <span class="title__experience__container--splchar">==></span> Ecommerce Websites
                     <span style="font-size: small;display: block;margin-top: 1%;">Worked in building an Ecommerce Website for PCB Designer layout using the WIX Platform.</span>
                 </h2>
             </div>
+            <div class="title__experience">
+                <h2 class="title__experience__container">HTML&CSS <span class="title__experience__container--splchar">==></span> Portfolio Creation
+                    <span style="font-size: small;display: block;margin-top: 1%;">Worked on creating a Portfolio on mine using tools like HTML,CSS and Javascript and used BEM in it.</span>
+                </h2>
+                
+                </figure>
+                <h2 class="title__experience__container">JAVA-SELENIUM<span class="title__experience__container--splchar">==></span> Automation Testing
+                    <span style="font-size: small;display: block;margin-top: 1%;">Worked on creating script for automating a website using Java-Selenium.</span>
+                </h2>
+            </div>
         </main>
 
-        <section class="info">
+        <section class="about__me">
    <h3>I'm Currently looking to join a <span style="color:rgb(94, 9, 116)"> Cross -functional </span> team</h3>
    <p>that values improving people's lives through accessible design</p>
         </section>
+
+<div class="social__icons">
+    <i class=" social-icons__icon fab fa-html5" style="color:rgb(167, 41, 7)"></i>
+    <i class=" social-icons__icon fab fa-css3-alt " style="color: blue;"></i>
+    <i class=" social-icons__icon fab fa-js" style="color:yellow"></i>
+    <i class=" social-icons__icon fab fa-java" style="color: blue;"></i> 
+</div>
+
 
         <div class="info__language__container">
             <h2 style=" font-weight: bolder;
@@ -101,7 +125,6 @@
 
 
 
-
        
 
 
@@ -116,6 +139,7 @@
             <i class="fab fa-linkedin social-icons" onclick="openLinkedIn()"></i>
             <i class="fab fa-facebook social-icons"></i>
             <i class="fab fa-twitter social-icons" ></i>
+           
         </div>
         
     

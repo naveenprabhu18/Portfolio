@@ -54,31 +54,71 @@ body {
       }
 
   }
+  .about {
+      margin-top: 5%;
+      margin-left: 5%;
+      display: flex;
+
+      gap: 40px;
+      align-items: center;
+
+
+  }
+
+  .about__info {
+      justify-content: space-between;
+      width: 550px
+  }
+  
   @media screen and (max-width:600px){
     .about h1{
         font-size:medium;
         margin: 0 0 0 20px;
     }
-    .about p{
+    /* .about p{
         text-align: center;
-    }
+    } */
+    
   }
     
 .header__name{
     color: rgb(17, 2, 23);
    font-weight: bold;
 }
-.about {
-    margin-top: 5%;
-   margin-left: 5%;
-    display: flex;
-   
-    gap:30px;
-    align-items: center;
 
-    
+
+
+.video__embadded{
+margin-left: 250px;
+display:flex;
+flex-basis:60%
 }
 
+.video__embadded__message{
+    position:relative;
+background: radial-gradient(circle, rgba(135, 9, 135, 0.6) 0%, rgba(255, 255, 255, 0) 100%);            right:20px;
+            z-index: 1;
+            height:30px;
+            top: 50px;
+            padding:5px;
+            border-radius: 2px;
+
+
+}
+
+@media screen and (max-width:600px){
+    .video__embadded {
+        margin-left: 5px;
+        margin-top:15px;
+    }
+
+}
+@media screen and (max-width:600px) {
+.video__embadded__message {
+    display: none;
+}
+
+}
 @media screen and (max-width:600px) {
     .about{
         display:block
@@ -112,6 +152,7 @@ body {
     display: flex;
     justify-content: space-around; 
     align-items: center;
+    margin:10px 50px 0 50px;
    
 }
 @media screen and (max-width:600px){
@@ -142,31 +183,47 @@ body {
 .title__experience__container--splchar{
 color:rgb(13, 130, 38)
 }
-.info h3{
-margin-top:5%;
+.about__me h3{
+
 text-align: center;
     justify-content: center;
     
 }
 
-.info {
-    margin-top: 2%;
-    height: 200px;
-    background: radial-gradient(circle,white);
+.about__me {
+margin:2%
 }
-.info p{
+.about__me p{
     text-align: center;
     font-size: small;
 }
 @media screen and (max-width:600px){
-    .info{
-        height: 100px
+    .about__me{
+        height: 3S0px
     }
-    .info h3{
+    .about__me h3{
        margin:0 5% 0 5%;
     }
 
 }
+.social__icons{
+    margin:0 0 2% 0;
+text-align: center;
+justify-content: space-between;
+}
+.social-icons__icon {
+
+        font-size: 40px;
+        margin: 20px 30px 0 15px;
+transition: transform 0.5s ease-in
+
+}
+.social-icons__icon:hover {
+    transform: scale(1.2);
+    
+    
+}
+
 
 /* .header {
     display: flex;
@@ -274,6 +331,7 @@ margin-top: 1%;
     .projects__content--imageOne{
         margin:5%;
         position:static;
+        width:max-content
         
     }
 
@@ -311,6 +369,7 @@ margin-top: 1%;
                         .projects__content--imageTwo{
                             margin:5%;
                             position:static;
+                            width: max-content
                             
                         }
                     }
@@ -326,7 +385,7 @@ margin-top: 1%;
                     }
                     .social-icons {
                 
-                        justify-content: space-between;
+                        
                         font-size: 40px;
                         margin: 20px 30px 0 15px; 
                         
